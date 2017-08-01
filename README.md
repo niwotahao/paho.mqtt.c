@@ -6,6 +6,10 @@ This code builds libraries which enable applications to connect to an [MQTT](htt
 
 Both synchronous and asynchronous modes of operation are supported.
 
+## Build Status
+
+Linux Build Status: [![Linux Build Status](https://travis-ci.org/eclipse/paho.mqtt.c.svg?branch=master)](https://travis-ci.org/eclipse/paho.mqtt.c)
+
 ## Libraries
 
 The Paho C client comprises four shared libraries:
@@ -87,8 +91,7 @@ Variable | Default Value | Description
 ------------ | ------------- | -------------
 PAHO_BUILD_STATIC | FALSE | Build a static version of the libraries
 PAHO_WITH_SSL | FALSE | Flag that defines whether to build ssl-enabled binaries too. 
-OPENSSL_INC_SEARCH_PATH | "" (system default) | Directory containing OpenSSL includes
-OPENSSL_LIB_SEARCH_PATH | "" (system default) | Directory containing OpenSSL libraries
+OPENSSL_SEARCH_PATH | "" (system default) | Directory containing your OpenSSL installation (i.e. `/usr/local` when headers are in `/usr/local/include` and libraries are in `/usr/local/lib`)
 PAHO_BUILD_DOCUMENTATION | FALSE | Create and install the HTML based API documentation (requires Doxygen)
 PAHO_BUILD_SAMPLES | FALSE | Build sample programs
 MQTT_TEST_BROKER | tcp://localhost:1883 | MQTT connection URL for a broker to use during test execution

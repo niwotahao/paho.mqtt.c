@@ -82,7 +82,9 @@
  */
 
 
+/*
 /// @cond EXCLUDE
+*/
 #if defined(__cplusplus)
  extern "C" {
 #endif
@@ -99,7 +101,9 @@
 #endif
 
 #include <stdio.h>
+/*
 /// @endcond
+*/
 
 #if !defined(NO_PERSISTENCE)
 #include "MQTTClientPersistence.h"
@@ -206,7 +210,7 @@ typedef struct
  * Global init of mqtt library. Call once on program start to set global behaviour.
  * handle_openssl_init - if mqtt library should handle openssl init (1) or rely on the caller to init it before using mqtt (0)
  */
-void MQTTAsync_global_init(MQTTAsync_init_options* inits);
+DLLExport void MQTTAsync_global_init(MQTTAsync_init_options* inits);
 
 /**
  * A handle representing an MQTT client. A valid client handle is available
