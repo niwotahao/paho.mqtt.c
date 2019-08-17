@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/eclipse/paho.mqtt.c.svg?branch=master)](https://travis-ci.org/eclipse/paho.mqtt.c)
+[![Total Alerts](https://img.shields.io/lgtm/alerts/g/eclipse/paho.mqtt.c.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/eclipse/paho.mqtt.c/alerts/)
+
+
 # Eclipse Paho MQTT C client
 
 This repository contains the source code for the [Eclipse Paho](http://eclipse.org/paho) MQTT C client library.
@@ -5,10 +9,6 @@ This repository contains the source code for the [Eclipse Paho](http://eclipse.o
 This code builds libraries which enable applications to connect to an [MQTT](http://mqtt.org) broker to publish messages, and to subscribe to topics and receive published messages.
 
 Both synchronous and asynchronous modes of operation are supported.
-
-## Build Status
-
-Linux Build Status: [![Linux Build Status](https://travis-ci.org/eclipse/paho.mqtt.c.svg?branch=master)](https://travis-ci.org/eclipse/paho.mqtt.c)
 
 ## Libraries
 
@@ -174,7 +174,7 @@ apt-get install gcc-mingw-w64-x86-64 gcc-mingw-w64-i686
 
 ## Usage and API
 
-Detailed API documentation is available by building the Doxygen docs in the  ``doc`` directory. A [snapshot is also available online](http://www.eclipse.org/paho/files/mqttdoc/Cclient/index.html).
+Detailed API documentation is available by building the Doxygen docs in the  ``doc`` directory. A [snapshot is also available online](https://www.eclipse.org/paho/files/mqttdoc/MQTTClient/html/index.html).
 
 Samples are available in the Doxygen docs and also in ``src/samples`` for reference.
 
